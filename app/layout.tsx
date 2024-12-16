@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Inter } from "next/font/google"
 
 export const metadata: Metadata = {
   title: "Apertre Admin",
   description: "",
 };
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function RootLayout({
   children,
@@ -13,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`antialiased ${inter.className}`}>
         {children}
       </body>
     </html>
