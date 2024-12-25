@@ -3,7 +3,7 @@ import { Evangelist, columns } from "./columns"
 import { DataTable } from "./data-table"
 
 async function getData(): Promise<Evangelist[]> {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/evangelists`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/evangelist`, {
         headers: {
             username: process.env.NEXT_PUBLIC_APERTRE_ADMIN_USERNAME as string,
             password: process.env.NEXT_PUBLIC_APERTRE_ADMIN_PASSWORD as string
