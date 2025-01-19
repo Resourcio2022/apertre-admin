@@ -13,7 +13,7 @@ const LISTS: List[] = [
 
 export default function page() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center gap-4 bg-slate-950">
+    <div className="w-screen h-screen flex justify-center items-center gap-4">
       {LISTS.map((list, idx) => (
         <Link href={list.url} key={idx}>
           <Button variant="secondary">

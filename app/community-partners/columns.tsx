@@ -1,8 +1,7 @@
 "use client"
 
+import { Status } from "@/lib/types"
 import { ColumnDef } from "@tanstack/react-table"
-
-export type Status = 'VERIFIED' | 'UNVERIFIED' | 'PENDING'
 
 export type CommunityPartner = {
     id: number
